@@ -1,6 +1,6 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1376635714916" ID="ID_733395362" MODIFIED="1376635730228" TEXT="Caching">
+<node CREATED="1376635714916" ID="ID_733395362" MODIFIED="1377241071707" TEXT="Caching">
 <node CREATED="1376642323509" FOLDED="true" ID="ID_1635822941" MODIFIED="1376642444408" POSITION="right" TEXT="Multilevel caches">
 <node CREATED="1376642384130" ID="ID_936481998" MODIFIED="1376642421300" TEXT="Check first level. Hit ? Proceed. Else Check L2 Cache"/>
 <node CREATED="1376642336196" ID="ID_1461071083" MODIFIED="1376642363210">
@@ -16,8 +16,7 @@
       but longer latency
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1376641695346" ID="ID_20713717" MODIFIED="1376642448251" POSITION="right" TEXT="Various caches">
@@ -163,5 +162,6 @@
 </node>
 </node>
 <node CREATED="1376642543823" ID="ID_670301099" MODIFIED="1376642547479" POSITION="left" TEXT="Memoization"/>
+<node CREATED="1377241073566" ID="ID_1674638802" MODIFIED="1377241075097" POSITION="left" TEXT="test"/>
 </node>
 </map>
