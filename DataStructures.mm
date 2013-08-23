@@ -1,7 +1,7 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1377241365779" ID="ID_1045547779" MODIFIED="1377243270051" TEXT="DataStructures">
-<node CREATED="1377243273863" ID="ID_764104537" MODIFIED="1377243275722" POSITION="right" TEXT="Graph">
+<node CREATED="1377241365779" ID="ID_1045547779" MODIFIED="1377259831946" TEXT="DataStructures">
+<node CREATED="1377243273863" FOLDED="true" ID="ID_764104537" MODIFIED="1377258485212" POSITION="right" TEXT="Graph">
 <node CREATED="1377241391244" FOLDED="true" ID="ID_760231523" MODIFIED="1377244027110" TEXT="Representation">
 <node CREATED="1377241403868" ID="ID_1253381922" MODIFIED="1377241449096" TEXT="Might be asked to run dfs or bfs starting at any vertex"/>
 <node CREATED="1377241453846" ID="ID_511755314" MODIFIED="1377241494262" TEXT="So retrieving a vertex should be in O(1)"/>
@@ -63,6 +63,153 @@
 <node CREATED="1377243007022" ID="ID_1636184856" MODIFIED="1377243070670" TEXT="union(v,w)"/>
 <node CREATED="1377243078028" ID="ID_1338307625" MODIFIED="1377243086199" TEXT="Add this edge to mst"/>
 <node CREATED="1377243096057" ID="ID_1220083478" MODIFIED="1377243103119" TEXT="Increase the weight of the mst"/>
+</node>
+</node>
+</node>
+<node CREATED="1377246724968" ID="ID_1625886634" MODIFIED="1377259626191" POSITION="right" TEXT="Symbol Tables">
+<node CREATED="1377246738575" ID="ID_1290754227" MODIFIED="1377246761775" TEXT="Red Black BST (balanced tree)"/>
+<node CREATED="1377246730717" ID="ID_1453971207" MODIFIED="1377246733623" TEXT="HashMap"/>
+<node CREATED="1377246764197" ID="ID_615998061" MODIFIED="1377259629284" TEXT="Trie">
+<node CREATED="1377260070212" FOLDED="true" ID="ID_798900648" MODIFIED="1377260182776" TEXT="Data in a trie is implicit">
+<node CREATED="1377260083961" ID="ID_371775400" MODIFIED="1377260114316">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Check the array position
+    </p>
+    <p>
+      corresponding to the character
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377260116160" ID="ID_533066371" MODIFIED="1377260153795">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If a node is present that
+    </p>
+    <p>
+      is present in the symbol table
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377260154827" ID="ID_314956235" MODIFIED="1377260162591" TEXT="If not, it is not present in the ST"/>
+<node CREATED="1377260173387" ID="ID_830311395" MODIFIED="1377260181932" TEXT="Only the value is explicit"/>
+</node>
+<node CREATED="1377258703075" FOLDED="true" ID="ID_1974344913" MODIFIED="1377260068025" TEXT="OuterClass">
+<node CREATED="1377258717089" ID="ID_807805730" MODIFIED="1377258730071" TEXT="TrieST&lt;Value&gt;"/>
+<node CREATED="1377259313919" ID="ID_32921397" MODIFIED="1377259317340" TEXT="Contains root node"/>
+<node CREATED="1377258737789" ID="ID_673851588" MODIFIED="1377258743414" TEXT="Contains common properties"/>
+<node CREATED="1377258747460" ID="ID_1278834157" MODIFIED="1377259028502" TEXT="R=256 (radix, breadth of each node)"/>
+<node CREATED="1377259068716" FOLDED="true" ID="ID_466385319" MODIFIED="1377260049824" TEXT="Contains all the public methods">
+<node CREATED="1377247705967" ID="ID_396297363" MODIFIED="1377259757127" TEXT="put">
+<node CREATED="1377247790191" ID="ID_1248503840" MODIFIED="1377259508300" TEXT="public method takes key,value,"/>
+<node CREATED="1377247711779" ID="ID_1138499141" MODIFIED="1377259536781">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      public method takes node, key, value, position and recursively
+    </p>
+    <p>
+      populates children
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1377259851522" ID="ID_1354856942" MODIFIED="1377260047153">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      At the passed in (or created) node, at the corresponding position
+    </p>
+    <p>
+      in the node array, insert the children
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377247949202" ID="ID_1090701957" MODIFIED="1377248136443" TEXT="if node m is null, create a node"/>
+<node CREATED="1377247941078" ID="ID_773307715" MODIFIED="1377248143271" TEXT="if node m is not null, use it"/>
+<node CREATED="1377247975323" ID="ID_1669814823" MODIFIED="1377248481930" TEXT="if position==key.length, insert the value, and return">
+<node CREATED="1377248483946" ID="ID_930070256" MODIFIED="1377248492491" TEXT="forms the base case"/>
+<node CREATED="1377248494585" ID="ID_525215995" MODIFIED="1377248507068" TEXT="for next character recursive put"/>
+</node>
+<node CREATED="1377248023692" ID="ID_15443711" MODIFIED="1377248068405" TEXT="find c= key.charAt(position)"/>
+<node CREATED="1377248069702" ID="ID_873226062" MODIFIED="1377248429343" TEXT="for node[c]">
+<node CREATED="1377248084981" ID="ID_1869377216" MODIFIED="1377248437936" TEXT="set with m"/>
+<node CREATED="1377248161299" ID="ID_888935772" MODIFIED="1377248456855" TEXT="but before that populate m.next[c] with the next digit, recursively"/>
+</node>
+<node CREATED="1377247860916" ID="ID_243834741" MODIFIED="1377248592416" TEXT="it returns the same node it takes (m) / the newly created node">
+<node CREATED="1377248629583" ID="ID_1233517795" MODIFIED="1377248639113" TEXT="with child nodes populated"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1377258709152" FOLDED="true" ID="ID_174459196" MODIFIED="1377259841992" TEXT="Nested Class">
+<node CREATED="1377258817482" ID="ID_244735322" MODIFIED="1377259399486" TEXT="Node">
+<node CREATED="1377258833871" ID="ID_1236119150" MODIFIED="1377258838573" TEXT="Object val"/>
+<node CREATED="1377258844010" ID="ID_1488706995" MODIFIED="1377259367880" TEXT="Node[] next = new Node[R]"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1377257326907" ID="ID_1141090932" MODIFIED="1377259031455" POSITION="right" TEXT="Trees">
+<node CREATED="1377257335438" FOLDED="true" ID="ID_137414095" MODIFIED="1377259110757" TEXT="BTree">
+<node CREATED="1377258601525" ID="ID_112536735" MODIFIED="1377258604900" TEXT="made up of"/>
+<node CREATED="1377258202155" FOLDED="true" ID="ID_1411564271" MODIFIED="1377259088322" TEXT="Outer Class">
+<node CREATED="1377258616727" ID="ID_1306008097" MODIFIED="1377258655487" TEXT="BTree&lt;Key extends Comparable&lt;Key&gt;, Value&gt;"/>
+<node CREATED="1377258226370" ID="ID_21273532" MODIFIED="1377258234838" TEXT="Contains overall, common properties"/>
+<node CREATED="1377257587437" ID="ID_1933416493" MODIFIED="1377258129320" TEXT="M (max children per BTree node)"/>
+<node CREATED="1377257455375" ID="ID_491919078" MODIFIED="1377257463812" TEXT="N (number of key value pairs)"/>
+<node CREATED="1377257435347" ID="ID_777506833" MODIFIED="1377257445939" TEXT="HT (height)"/>
+<node CREATED="1377258254226" ID="ID_635468346" MODIFIED="1377258257507" TEXT="Node root"/>
+<node CREATED="1377259081855" ID="ID_102880255" MODIFIED="1377259087026" TEXT="Contains all the public methods"/>
+</node>
+<node CREATED="1377258206873" FOLDED="true" ID="ID_305074589" MODIFIED="1377259107492" TEXT="Nested Class">
+<node CREATED="1377259096775" ID="ID_1017252781" MODIFIED="1377259105805" TEXT="These classes act as helpers"/>
+<node CREATED="1377257428332" ID="ID_1961018312" MODIFIED="1377257489215" TEXT="Node">
+<node CREATED="1377258048924" ID="ID_972191285" MODIFIED="1377258070515" TEXT="Conceptually two types">
+<node CREATED="1377258053143" ID="ID_1188224755" MODIFIED="1377258056939" TEXT="Internal nodes">
+<node CREATED="1377258072749" ID="ID_1857396368" MODIFIED="1377258088091" TEXT="use only key and next fields"/>
+</node>
+<node CREATED="1377258057345" ID="ID_1159591137" MODIFIED="1377258062844" TEXT="External nodes">
+<node CREATED="1377258089732" ID="ID_278790951" MODIFIED="1377258097699" TEXT="use only key and value fields"/>
+</node>
+</node>
+<node CREATED="1377257514133" ID="ID_357711430" MODIFIED="1377257645288" STYLE="fork" TEXT="Entry[M] children"/>
+<node CREATED="1377257501682" ID="ID_1645286916" MODIFIED="1377257507853" TEXT="numberOfChildren"/>
+</node>
+<node CREATED="1377258325061" ID="ID_1262160588" MODIFIED="1377258361790" TEXT="Entry">
+<node CREATED="1377257545004" ID="ID_1548204159" MODIFIED="1377258011210" TEXT="Node next"/>
+<node CREATED="1377257539927" ID="ID_1956953729" MODIFIED="1377258011210" TEXT="key">
+<node CREATED="1377257712624" ID="ID_1284831987" MODIFIED="1377257715358" TEXT="Templated"/>
+<node CREATED="1377257677972" ID="ID_39446157" MODIFIED="1377257681456" TEXT="Comparable"/>
+</node>
+<node CREATED="1377257542020" ID="ID_480546727" MODIFIED="1377258010789" TEXT="value">
+<node CREATED="1377257716779" ID="ID_1617919734" MODIFIED="1377257718513" TEXT="Templated"/>
+<node CREATED="1377257683659" ID="ID_1051505686" MODIFIED="1377257686377" TEXT="Object"/>
+</node>
+</node>
 </node>
 </node>
 </node>
