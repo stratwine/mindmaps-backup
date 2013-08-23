@@ -1,7 +1,11 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1377277976488" ID="ID_1446237198" MODIFIED="1377278004779" TEXT="Algorithm Paradigms">
-<node CREATED="1377278107043" ID="ID_994261721" MODIFIED="1377278111961" POSITION="right" TEXT="Randomization"/>
+<node CREATED="1377278107043" ID="ID_994261721" MODIFIED="1377278111961" POSITION="right" TEXT="Randomization">
+<node CREATED="1377284423619" ID="ID_509931912" MODIFIED="1377284430883" TEXT="Randomized Quicksort">
+<node CREATED="1377284441228" ID="ID_596172413" MODIFIED="1377284449334" TEXT="uses Randomized Partition"/>
+</node>
+</node>
 <node CREATED="1377278102654" FOLDED="true" ID="ID_112423418" MODIFIED="1377284180676" POSITION="right" TEXT="Backtracking">
 <node CREATED="1377284011280" FOLDED="true" ID="ID_921984405" MODIFIED="1377284166912" TEXT="usually involves a for-loop">
 <node CREATED="1377284088889" ID="ID_274775736" MODIFIED="1377284127077" TEXT="within it, a recursion"/>
@@ -67,18 +71,22 @@
 <node CREATED="1377282172255" ID="ID_195874912" MODIFIED="1377282176760" TEXT="tower of hanoi"/>
 <node CREATED="1377282146224" ID="ID_1792885927" MODIFIED="1377282170515" TEXT="many recurrance solutions don&apos;t fall under DP"/>
 </node>
-<node CREATED="1377278086503" FOLDED="true" ID="ID_1854521682" MODIFIED="1377282104210" POSITION="right" TEXT="Divide and Conquer">
+<node CREATED="1377278086503" FOLDED="true" ID="ID_1854521682" MODIFIED="1377284796452" POSITION="right" TEXT="Divide and Conquer">
 <node CREATED="1377281962523" ID="ID_774485682" MODIFIED="1377281964281" TEXT="idea">
 <node CREATED="1377281978744" ID="ID_1071955073" MODIFIED="1377282017444" TEXT="the problem set is reduced considerably each time&#xa;that in turn improves the effeciency"/>
-<node CREATED="1377280224804" FOLDED="true" ID="ID_1467397402" MODIFIED="1377282054248" TEXT="conquer step doing the work">
+<node CREATED="1377280224804" FOLDED="true" ID="ID_1467397402" MODIFIED="1377284624407" TEXT="conquer step doing the work">
 <node CREATED="1377280298294" ID="ID_1949224132" MODIFIED="1377280304384" TEXT="counting inversions"/>
 <node CREATED="1377280271049" ID="ID_1336638294" MODIFIED="1377280273504" TEXT="mergesort">
 <node CREATED="1377279993250" ID="ID_676682717" MODIFIED="1377280199674" TEXT="mergesort - works by sorting at smaller range&#xa;and then at bigger range. Again, not too big&#xa;a look-ahead region"/>
 </node>
 </node>
-<node CREATED="1377280219139" ID="ID_1905033262" MODIFIED="1377282055044" TEXT="divide step doing the work">
-<node CREATED="1377282057075" ID="ID_467103513" MODIFIED="1377282066480" TEXT="search in bst"/>
-<node CREATED="1377280263140" ID="ID_1135617728" MODIFIED="1377280284545" TEXT="quicksort">
+<node CREATED="1377280219139" ID="ID_1905033262" MODIFIED="1377284625497" TEXT="divide step doing the work">
+<node CREATED="1377282057075" ID="ID_467103513" MODIFIED="1377284637160" TEXT="binary search">
+<node CREATED="1377284672248" ID="ID_301855014" MODIFIED="1377284683114" TEXT="iterative binary search"/>
+<node CREATED="1377284722615" ID="ID_203008237" MODIFIED="1377284728968" TEXT="find square root"/>
+<node CREATED="1377284641645" ID="ID_251380488" MODIFIED="1377284716759" TEXT="search in row-wise, column-wise sorted array"/>
+</node>
+<node CREATED="1377280263140" FOLDED="true" ID="ID_1135617728" MODIFIED="1377284630357" TEXT="quicksort">
 <node CREATED="1377279957111" ID="ID_182090618" MODIFIED="1377279989215" TEXT="the rearrage-region is shortened considerably&#xa;in quicksort for each call"/>
 </node>
 </node>
