@@ -131,13 +131,16 @@
 <node CREATED="1377279293417" ID="ID_308122975" MODIFIED="1377279297308" TEXT="resizing involved"/>
 <node CREATED="1377279414419" ID="ID_752670140" MODIFIED="1377279419900" TEXT="amortized analysis"/>
 </node>
-<node CREATED="1377279270054" FOLDED="true" ID="ID_1462461907" MODIFIED="1377285048200" POSITION="right" TEXT="Arrays">
+<node CREATED="1377279270054" ID="ID_1462461907" MODIFIED="1377510231758" POSITION="right" TEXT="Arrays">
 <node CREATED="1377284973289" FOLDED="true" ID="ID_1928082570" MODIFIED="1377284992764" TEXT="naming">
 <node CREATED="1377284983365" ID="ID_580878166" MODIFIED="1377284991557" TEXT="eg: vertices in a graph"/>
 <node CREATED="1377284978426" ID="ID_558226852" MODIFIED="1377284982943" TEXT="index becomes the name"/>
 </node>
 <node CREATED="1377284929050" ID="ID_295338042" MODIFIED="1377284933873" TEXT="indexing"/>
 <node CREATED="1377284918836" ID="ID_644653612" MODIFIED="1377284920480" TEXT="swap"/>
+<node CREATED="1377509994716" ID="ID_1212048648" MODIFIED="1377509997182" TEXT="algorithms">
+<node CREATED="1377510000648" ID="ID_195205894" MODIFIED="1377510010859" TEXT="all permutations"/>
+</node>
 <node CREATED="1377284915221" ID="ID_519491490" MODIFIED="1377284917993" TEXT="permutations"/>
 </node>
 <node CREATED="1377246724968" FOLDED="true" ID="ID_1625886634" MODIFIED="1377427141903" POSITION="right" TEXT="Symbol Tables">
@@ -406,7 +409,7 @@
 <node CREATED="1377276809097" ID="ID_1897478757" MODIFIED="1377276819594" TEXT="find min element with O(1)"/>
 </node>
 </node>
-<node CREATED="1377273452013" FOLDED="true" ID="ID_1904732798" MODIFIED="1377421583585" POSITION="right" TEXT="LinkedList">
+<node CREATED="1377273452013" FOLDED="true" ID="ID_1904732798" MODIFIED="1377509846260" POSITION="right" TEXT="LinkedList">
 <node CREATED="1377273674279" ID="ID_516967908" MODIFIED="1377275340185" TEXT="Form chains for other data-structures"/>
 <node CREATED="1377273716373" ID="ID_1996684475" MODIFIED="1377273738698" TEXT="separate chaining (hashmap collission resolution)"/>
 <node CREATED="1377273688629" ID="ID_1426530262" MODIFIED="1377273709574" TEXT="binary tree built with sorted input becomes a LL"/>
@@ -415,16 +418,154 @@
 <node CREATED="1377337784907" ID="ID_826461926" MODIFIED="1377337797370" TEXT="return and assign "/>
 <node CREATED="1377337798280" ID="ID_959971980" MODIFIED="1377337810584" TEXT="don&apos;t attempt to modify the passed object"/>
 </node>
-<node CREATED="1377273816721" FOLDED="true" ID="ID_1928128411" MODIFIED="1377337830560" TEXT="algorithms">
-<node CREATED="1377273828459" ID="ID_779361689" MODIFIED="1377273833841" TEXT="reverse"/>
-<node CREATED="1377273834336" ID="ID_1493069427" MODIFIED="1377273845483" TEXT="find if palindrome"/>
+<node CREATED="1377273816721" ID="ID_1928128411" MODIFIED="1377504938368" TEXT="algorithms">
+<node CREATED="1377273828459" FOLDED="true" ID="ID_779361689" MODIFIED="1377508345034" TEXT="reverse">
+<node CREATED="1377506501225" FOLDED="true" ID="ID_627145115" MODIFIED="1377508343613" TEXT="recursive">
+<node CREATED="1377507685668" ID="ID_1383024684" MODIFIED="1377507723969" TEXT="what if the list had one entry ? return list"/>
+<node CREATED="1377507671922" ID="ID_1155548941" MODIFIED="1377507737731" TEXT="what is the reverse of empty list ? return null"/>
+<node CREATED="1377507941202" FOLDED="true" ID="ID_1775748758" MODIFIED="1377508331150" TEXT="what is the reverse of n element list ?">
+<node CREATED="1377507952369" ID="ID_1221935638" MODIFIED="1377507966597" TEXT="rev(secondElement) followed by first element"/>
+<node CREATED="1377507971002" ID="ID_1943470827" MODIFIED="1377508286828" TEXT="to find this: note the second element (list.next)">
+<icon BUILTIN="full-1"/>
+</node>
+<node CREATED="1377507998834" ID="ID_1249473638" MODIFIED="1377508305459" TEXT="unlink now: list.next=null (to avoid cycles)">
+<icon BUILTIN="full-2"/>
+</node>
+<node CREATED="1377508022745" ID="ID_27181028" MODIFIED="1377508308708" TEXT="now reverse second list: reverseRest= rev(secondElem)">
+<icon BUILTIN="full-3"/>
+</node>
+<node CREATED="1377508043127" ID="ID_132328162" MODIFIED="1377508311753" TEXT="secondElem.next=first">
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+</node>
+<node CREATED="1377505042951" FOLDED="true" ID="ID_721376436" MODIFIED="1377505852334" TEXT="iterative">
+<node CREATED="1377505046262" ID="ID_1842550879" MODIFIED="1377505360010" TEXT="maintain 4 references"/>
+<node CREATED="1377505052618" ID="ID_1533592719" MODIFIED="1377505166163" TEXT="current, prev,next, reversedHead"/>
+<node CREATED="1377505783078" FOLDED="true" ID="ID_1843463196" MODIFIED="1377505850569" TEXT="how to find the reversedHead">
+<node CREATED="1377505825032" ID="ID_52269678" MODIFIED="1377505841635" TEXT="after iteration, prev holds the reversedHead">
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1377505196463" ID="ID_1207561017" MODIFIED="1377505821658">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      if next is null during iteration
+    </p>
+    <p>
+      note it as reversedHead
+    </p>
+  </body>
+</html>
+</richcontent>
+<icon BUILTIN="idea"/>
+</node>
+</node>
+<node CREATED="1377505075544" ID="ID_401102755" MODIFIED="1377505195931" TEXT="init everything except current to null"/>
+<node CREATED="1377505292780" ID="ID_601287321" MODIFIED="1377505559495">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      run the whole thing in while loop
+    </p>
+    <p>
+      when current is not null
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377505214525" ID="ID_905665934" MODIFIED="1377505276970">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      next=current.next<br />current.next=prev
+    </p>
+    <p>
+      prev=current
+    </p>
+    <p>
+      current=next
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377505311281" ID="ID_330154969" MODIFIED="1377505326716" TEXT="return reversedHead after the loop ends"/>
+</node>
+</node>
+<node CREATED="1377273834336" FOLDED="true" ID="ID_1493069427" MODIFIED="1377509732168" TEXT="find if palindrome">
+<node CREATED="1377508465930" FOLDED="true" ID="ID_1831992346" MODIFIED="1377509577388" TEXT="reverse the list approach">
+<node CREATED="1377508479938" FOLDED="true" ID="ID_379762452" MODIFIED="1377509132414" TEXT="find the mid of the list">
+<node CREATED="1377508871950" ID="ID_1998133817" MODIFIED="1377508935653">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for odd we don't want&#160;
+    </p>
+    <p>
+      the mid number in any list
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377508900092" ID="ID_912518985" MODIFIED="1377509077254">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      achieved by ending at&#160;<br />fastPtr==null || fastPtr.next==null
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1377509098103" ID="ID_364924301" MODIFIED="1377509108239" TEXT="if fastPtr was present : odd length"/>
+<node CREATED="1377509115704" ID="ID_1646133733" MODIFIED="1377509130540" TEXT="if odd length note the mid element"/>
+<node CREATED="1377509080066" ID="ID_854579285" MODIFIED="1377509114611" TEXT="if fastPtr was null at end : even length"/>
+</node>
+<node CREATED="1377509135413" ID="ID_1688947685" MODIFIED="1377509266145" TEXT="note the two sections"/>
+<node CREATED="1377509329689" ID="ID_1740207540" MODIFIED="1377509334585" TEXT="1 2 3 3 2 1"/>
+<node CREATED="1377509344018" ID="ID_548704067" MODIFIED="1377509353733" TEXT="unlink after the first half"/>
+<node CREATED="1377509359580" ID="ID_1647354598" MODIFIED="1377509504109" TEXT="now we have two lists"/>
+<node CREATED="1377509354419" ID="ID_234485047" MODIFIED="1377509358613" TEXT="reverse the first half"/>
+<node CREATED="1377509366316" ID="ID_1808288970" MODIFIED="1377509507118" TEXT="compare the lists and check"/>
+<node CREATED="1377509375048" FOLDED="true" ID="ID_1652734307" MODIFIED="1377509575359" TEXT="finally revert the change">
+<node CREATED="1377509404268" FOLDED="true" ID="ID_617586802" MODIFIED="1377509574110" TEXT="append">
+<node CREATED="1377509420391" ID="ID_1120782504" MODIFIED="1377509571472" TEXT="attach first with midNode if midNode was present"/>
+<node CREATED="1377509428546" ID="ID_1269428353" MODIFIED="1377509435282" TEXT="or else attach with second list"/>
+</node>
+<node CREATED="1377509388582" ID="ID_260801939" MODIFIED="1377509403816" TEXT="reverse the first half again"/>
+</node>
+</node>
+<node CREATED="1377508397494" FOLDED="true" ID="ID_980183547" MODIFIED="1377508478705" TEXT="simple: use stack">
+<node CREATED="1377508403116" ID="ID_1284159603" MODIFIED="1377508410738" TEXT="pass 1: iterate and add to stack"/>
+<node CREATED="1377508411222" ID="ID_281698405" MODIFIED="1377508424747" TEXT="pass 2: compre stack.pop with traversed"/>
+<node CREATED="1377508425559" ID="ID_93948426" MODIFIED="1377508454217" TEXT="if any node doesn&apos;t match, false"/>
+</node>
+</node>
 <node CREATED="1377273846779" ID="ID_723300387" MODIFIED="1377273858995" TEXT="interleave"/>
 <node CREATED="1377273863611" ID="ID_1888651356" MODIFIED="1377273871779" TEXT="start of a cycle"/>
 <node CREATED="1377273873254" ID="ID_3739458" MODIFIED="1377273883860" TEXT="length of a loop"/>
 <node CREATED="1377273892269" ID="ID_1386432321" MODIFIED="1377273903726" TEXT="length of a LL with loop"/>
 <node CREATED="1377273904747" ID="ID_891701613" MODIFIED="1377273917234" TEXT="median of a LL with loop"/>
 <node CREATED="1377273918252" ID="ID_1649869184" MODIFIED="1377273925785" TEXT="intersection of 2 LL"/>
-<node CREATED="1377333217318" FOLDED="true" ID="ID_1926744749" MODIFIED="1377333261744" TEXT="append a LL to another">
+<node CREATED="1377333217318" FOLDED="true" ID="ID_1926744749" MODIFIED="1377506628721" TEXT="append a LL to another">
 <node CREATED="1377333229999" ID="ID_1340611386" MODIFIED="1377333237302" TEXT="if list1 is empty return list2"/>
 <node CREATED="1377333243196" ID="ID_538033608" MODIFIED="1377333260866" TEXT="else find list1&apos;s tail and append"/>
 </node>
@@ -436,7 +577,7 @@
 <node CREATED="1377335119597" ID="ID_1312409406" MODIFIED="1377335134656" TEXT="So you&apos;ve got a node even if list1&apos;s head=null"/>
 <node CREATED="1377334767076" ID="ID_1008223352" MODIFIED="1377334773938" TEXT="Return the two new heads"/>
 </node>
-<node CREATED="1377333349304" FOLDED="true" ID="ID_1250999120" MODIFIED="1377334856914" TEXT="fron back split">
+<node CREATED="1377333349304" FOLDED="true" ID="ID_1250999120" MODIFIED="1377509584505" TEXT="fron back split">
 <node CREATED="1377333364777" ID="ID_131127048" MODIFIED="1377333679220" TEXT="split {2,3,5,7,11} to {2,3,5} and {7,11}"/>
 <node CREATED="1377333662030" ID="ID_642549317" MODIFIED="1377333676226" TEXT="problem is to find the mid node and split"/>
 <node CREATED="1377333680268" ID="ID_54794565" MODIFIED="1377333689788" TEXT="use slow ptr, fast ptr approach"/>
