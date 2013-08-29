@@ -48,8 +48,7 @@
       swap each character with itself and the following unfixed characters.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1377511588838" ID="ID_368609476" MODIFIED="1377511673717" TEXT="invoke the permute method recursively, incrementing fixed-length"/>
 <node CREATED="1377511774630" ID="ID_267877918" MODIFIED="1377515798655" TEXT="backtrack the swap (so as to avoid repeats / missing permutations)"/>
@@ -74,8 +73,7 @@
       a long tree
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1377516076475" ID="ID_1313164656" MODIFIED="1377516084844" TEXT="abc">
 <node CREATED="1377516084844" ID="ID_1079042308" MODIFIED="1377516087139" TEXT="abc">
@@ -105,8 +103,7 @@
       to swap each&#160;unfixed character itself<br />and the following unfixed characters
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1377511834728" FOLDED="true" ID="ID_1705012846" MODIFIED="1377511941982" TEXT="for loop index">
@@ -190,16 +187,49 @@
 <node CREATED="1377282172255" ID="ID_195874912" MODIFIED="1377282176760" TEXT="tower of hanoi"/>
 <node CREATED="1377282146224" ID="ID_1792885927" MODIFIED="1377282170515" TEXT="many recurrance solutions don&apos;t fall under DP"/>
 </node>
-<node CREATED="1377278086503" FOLDED="true" ID="ID_1854521682" MODIFIED="1377284796452" POSITION="right" TEXT="Divide and Conquer">
-<node CREATED="1377281962523" ID="ID_774485682" MODIFIED="1377281964281" TEXT="idea">
+<node CREATED="1377278086503" FOLDED="true" ID="ID_1854521682" MODIFIED="1377687179467" POSITION="right" TEXT="Divide and Conquer">
+<node CREATED="1377281962523" FOLDED="true" ID="ID_774485682" MODIFIED="1377687178686" TEXT="idea">
 <node CREATED="1377281978744" ID="ID_1071955073" MODIFIED="1377282017444" TEXT="the problem set is reduced considerably each time&#xa;that in turn improves the effeciency"/>
-<node CREATED="1377280224804" FOLDED="true" ID="ID_1467397402" MODIFIED="1377284624407" TEXT="conquer step doing the work">
-<node CREATED="1377280298294" ID="ID_1949224132" MODIFIED="1377280304384" TEXT="counting inversions"/>
-<node CREATED="1377280271049" ID="ID_1336638294" MODIFIED="1377280273504" TEXT="mergesort">
+<node CREATED="1377280224804" FOLDED="true" ID="ID_1467397402" MODIFIED="1377687177748" TEXT="conquer step doing the work">
+<node CREATED="1377280298294" FOLDED="true" ID="ID_1949224132" MODIFIED="1377684366731" TEXT="counting inversions">
+<node CREATED="1377684200325" ID="ID_670586832" MODIFIED="1377684209819" TEXT="proceed like in mergesort"/>
+<node CREATED="1377684275949" ID="ID_119843064" MODIFIED="1377684289645" TEXT="each mergesort call returns invCount"/>
+<node CREATED="1377684293417" ID="ID_556961284" MODIFIED="1377684301728" TEXT="find it for left"/>
+<node CREATED="1377684301916" ID="ID_18342792" MODIFIED="1377684305297" TEXT="find it for right"/>
+<node CREATED="1377684305516" ID="ID_602087050" MODIFIED="1377684324408" TEXT="find the one for merge, and add all"/>
+<node CREATED="1377684327569" FOLDED="true" ID="ID_1792042813" MODIFIED="1377684366120" TEXT="note: all methods return invCount">
+<node CREATED="1377684352800" ID="ID_1660015460" MODIFIED="1377684365103" TEXT="though they look like mergesort otherwise"/>
+</node>
+</node>
+<node CREATED="1377280271049" FOLDED="true" ID="ID_1336638294" MODIFIED="1377684129185" TEXT="mergesort">
 <node CREATED="1377279993250" ID="ID_676682717" MODIFIED="1377280199674" TEXT="mergesort - works by sorting at smaller range&#xa;and then at bigger range. Again, not too big&#xa;a look-ahead region"/>
 </node>
+<node CREATED="1377683496510" FOLDED="true" ID="ID_542688773" MODIFIED="1377687175405">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      find the max profit&#160;<br />buy and sell stock
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1377687021118" ID="ID_1066298370" MODIFIED="1377687027820" TEXT="input takes left and right ends"/>
+<node CREATED="1377687028164" ID="ID_1143377611" MODIFIED="1377687041583" TEXT="divide at the mid">
+<node CREATED="1377687059112" ID="ID_1915423000" MODIFIED="1377687063767" TEXT="like binary search"/>
 </node>
-<node CREATED="1377280219139" ID="ID_1905033262" MODIFIED="1377284625497" TEXT="divide step doing the work">
+<node CREATED="1377687065704" ID="ID_1124434674" MODIFIED="1377687071922" TEXT="if l==r">
+<node CREATED="1377687073219" ID="ID_1434131287" MODIFIED="1377687076859" TEXT="return 0"/>
+</node>
+<node CREATED="1377687078421" ID="ID_1163998854" MODIFIED="1377687141051" TEXT="find MaxProfit(l,m) as m1"/>
+<node CREATED="1377687091794" ID="ID_225915602" MODIFIED="1377687144738" TEXT="find MaxProfit(m+1,r) as m2"/>
+<node CREATED="1377687100230" ID="ID_691745370" MODIFIED="1377687155642" TEXT="find min(l,,m) and max(m_1..r) as v1 and v2"/>
+<node CREATED="1377687123460" ID="ID_147639395" MODIFIED="1377687173921" TEXT="return Max(m1,m2,v2-v1)"/>
+</node>
+</node>
+<node CREATED="1377280219139" FOLDED="true" ID="ID_1905033262" MODIFIED="1377683483466" TEXT="divide step doing the work">
 <node CREATED="1377282057075" ID="ID_467103513" MODIFIED="1377284637160" TEXT="binary search">
 <node CREATED="1377284672248" ID="ID_301855014" MODIFIED="1377284683114" TEXT="iterative binary search"/>
 <node CREATED="1377284722615" ID="ID_203008237" MODIFIED="1377284728968" TEXT="find square root"/>
