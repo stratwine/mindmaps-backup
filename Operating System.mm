@@ -22,9 +22,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1377652139485" FOLDED="true" ID="ID_288052670" MODIFIED="1377653072763" POSITION="right" TEXT="duties">
+<node CREATED="1377652139485" ID="ID_288052670" MODIFIED="1377779420424" POSITION="right" TEXT="duties">
 <node CREATED="1377652787604" ID="ID_1233428222" MODIFIED="1377652811445" TEXT="main duties">
-<node CREATED="1377652159450" FOLDED="true" ID="ID_1230229575" MODIFIED="1377652500228" TEXT="memory management">
+<node CREATED="1377652159450" ID="ID_1230229575" MODIFIED="1377779430532" TEXT="memory management">
 <node CREATED="1377652254062" ID="ID_1828713917" MODIFIED="1377652257089" TEXT="primary memory"/>
 <node CREATED="1377652257432" ID="ID_1411202708" MODIFIED="1377652260601" TEXT="secondary memory"/>
 <node CREATED="1377652269585" FOLDED="true" ID="ID_1963192307" MODIFIED="1377652341451" TEXT="keep track of primary memory">
@@ -32,8 +32,71 @@
 <node CREATED="1377652304841" ID="ID_459456012" MODIFIED="1377652322274" TEXT="allocates memory when req by process"/>
 <node CREATED="1377652329025" ID="ID_1383921789" MODIFIED="1377652335069" TEXT="deallocates when no longer required"/>
 </node>
+<node CREATED="1377779434344" FOLDED="true" ID="ID_335129516" MODIFIED="1377780028183" TEXT="memory management unit">
+<node CREATED="1377779445468" FOLDED="true" ID="ID_1365171224" MODIFIED="1377780026918">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      takes care of translation from&#160;
+    </p>
+    <p>
+      virtual memory to physical address
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1377779708913" ID="ID_1249076815" MODIFIED="1377779714225" TEXT="virtual memory">
+<icon BUILTIN="down"/>
 </node>
-<node CREATED="1377652167542" ID="ID_1128873802" MODIFIED="1377652556930" TEXT="processor management">
+<node CREATED="1377779450030" ID="ID_1746881840" MODIFIED="1377779457686" TEXT="hides fragementation"/>
+<node CREATED="1377779457952" FOLDED="true" ID="ID_1028666756" MODIFIED="1377779642232" TEXT="gives a virtual contiguous space">
+<node CREATED="1377779588190" ID="ID_109004448" MODIFIED="1377779600470" TEXT="contiguous segments"/>
+</node>
+<node CREATED="1377779516274" ID="ID_149301478" MODIFIED="1377779520227" TEXT="increases security"/>
+<node CREATED="1377779537226" FOLDED="true" ID="ID_489109044" MODIFIED="1377780025543">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      can use more memory&#160;than<br />physically available
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1377779557536" ID="ID_137238938" MODIFIED="1377779559067" TEXT="paging"/>
+<node CREATED="1377779774829" FOLDED="true" ID="ID_1666885825" MODIFIED="1377780024355" TEXT="page tables">
+<node CREATED="1377779862791" ID="ID_239121737" MODIFIED="1377780018122" TEXT="OS can have 1 page table"/>
+<node CREATED="1377779871306" ID="ID_199845932" MODIFIED="1377779875868" TEXT="or 1 for application"/>
+<node CREATED="1377779876165" ID="ID_1404749351" MODIFIED="1377779882570" TEXT="or a hierarchy of tables"/>
+<node CREATED="1377779884148" ID="ID_982465618" MODIFIED="1377779986874">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      HW raises a page fault if&#160;
+    </p>
+    <p>
+      physical address was not loaded
+    </p>
+    <p>
+      in main memory
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1377652167542" FOLDED="true" ID="ID_1128873802" MODIFIED="1377779429486" TEXT="processor management">
 <node CREATED="1377652352338" ID="ID_809585838" MODIFIED="1377652363586" TEXT="which process gets the processor"/>
 <node CREATED="1377652377354" ID="ID_1756940683" MODIFIED="1377652379889" TEXT="how much time"/>
 <node CREATED="1377652383809" FOLDED="true" ID="ID_153611369" MODIFIED="1377652601481" TEXT="called process scheduling">
@@ -56,7 +119,7 @@
 <node CREATED="1377652759664" ID="ID_1232260833" MODIFIED="1377652763438" TEXT="deallocates resources"/>
 </node>
 </node>
-<node CREATED="1377652800924" ID="ID_1928053421" MODIFIED="1377652856084" TEXT="other duties">
+<node CREATED="1377652800924" FOLDED="true" ID="ID_1928053421" MODIFIED="1377779427564" TEXT="other duties">
 <node CREATED="1377652185178" ID="ID_509161570" MODIFIED="1377652186889" TEXT="security">
 <node CREATED="1377652864573" ID="ID_1164945906" MODIFIED="1377652875205" TEXT="prevent unauthorised access to programs"/>
 </node>
