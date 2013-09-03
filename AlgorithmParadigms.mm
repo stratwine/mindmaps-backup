@@ -6,7 +6,7 @@
 <node CREATED="1377284441228" ID="ID_596172413" MODIFIED="1377284449334" TEXT="uses Randomized Partition"/>
 </node>
 </node>
-<node CREATED="1377278102654" FOLDED="true" ID="ID_112423418" MODIFIED="1377517643777" POSITION="right" TEXT="Backtracking">
+<node CREATED="1377278102654" ID="ID_112423418" MODIFIED="1378175670632" POSITION="right" TEXT="Backtracking">
 <node CREATED="1377284011280" FOLDED="true" ID="ID_921984405" MODIFIED="1377284166912" TEXT="usually involves a for-loop">
 <node CREATED="1377284088889" ID="ID_274775736" MODIFIED="1377284127077" TEXT="within it, a recursion"/>
 <node CREATED="1377284101706" ID="ID_41884762" MODIFIED="1377284125161" TEXT="the loop index forming a start param&#xa;for recursion"/>
@@ -151,6 +151,17 @@
 </node>
 </node>
 </node>
+<node CREATED="1378175676642" ID="ID_923561137" MODIFIED="1378175816791" TEXT="types">
+<node CREATED="1378175680189" FOLDED="true" ID="ID_439342108" MODIFIED="1378175761218" TEXT="paths vary with choices">
+<node CREATED="1378175698105" ID="ID_659895868" MODIFIED="1378175705554" TEXT="eg: N queens problem"/>
+<node CREATED="1378175716142" ID="ID_597573187" MODIFIED="1378175741792" TEXT="constraints get updated based on each choice"/>
+<node CREATED="1378175727330" ID="ID_798896984" MODIFIED="1378175734778" TEXT="or path&apos;s vary based on each choice"/>
+</node>
+<node CREATED="1378175762299" ID="ID_1641517035" MODIFIED="1378175784308" TEXT="paths are static /&#xa;do not vary with choices">
+<node CREATED="1378175785769" ID="ID_1981379273" MODIFIED="1378175800448" TEXT="simple dfs backtrack would do"/>
+<node CREATED="1378175800887" ID="ID_1563268821" MODIFIED="1378175803667" TEXT="eg: Maze"/>
+</node>
+</node>
 </node>
 <node CREATED="1377278095608" FOLDED="true" ID="ID_378441907" MODIFIED="1377282105801" POSITION="right" TEXT="Dynamic Programming">
 <node CREATED="1377281949830" ID="ID_975700659" MODIFIED="1377281951550" TEXT="idea">
@@ -218,8 +229,7 @@
       find the max profit&#160;<br />buy and sell stock
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1377687021118" ID="ID_1066298370" MODIFIED="1377687027820" TEXT="input takes left and right ends"/>
 <node CREATED="1377687028164" ID="ID_1143377611" MODIFIED="1377687041583" TEXT="divide at the mid">
 <node CREATED="1377687059112" ID="ID_1915423000" MODIFIED="1377687063767" TEXT="like binary search"/>
