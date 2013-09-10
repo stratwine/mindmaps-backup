@@ -16,7 +16,7 @@
 <node CREATED="1378745346616" ID="ID_1588959855" MODIFIED="1378745357508" TEXT="while(!flag){count some sheep}"/>
 <node CREATED="1378745359213" ID="ID_1231871443" MODIFIED="1378745374012" TEXT="while(!cancelled){do some work}"/>
 </node>
-<node CREATED="1378745758154" FOLDED="true" ID="ID_1409404373" MODIFIED="1378745841284" TEXT="making an instance public">
+<node CREATED="1378745758154" FOLDED="true" ID="ID_1409404373" MODIFIED="1378747219121" TEXT="making an instance public">
 <node CREATED="1378745778996" ID="ID_984358241" MODIFIED="1378745785953" TEXT="just about anyone could update it"/>
 <node CREATED="1378745786309" ID="ID_1867073625" MODIFIED="1378745815360" TEXT="impossible to ensure thread-safety"/>
 </node>
@@ -27,7 +27,8 @@
 <node CREATED="1378745914722" ID="ID_720604618" MODIFIED="1378745929103" TEXT="but with the states reference,"/>
 <node CREATED="1378745930198" ID="ID_314315114" MODIFIED="1378745936857" TEXT="the internal objects could be changed !!"/>
 </node>
-<node CREATED="1378746078149" ID="ID_785014533" MODIFIED="1378746267892" TEXT="implicitly allowing the this reference to escape">
+<node CREATED="1378746078149" FOLDED="true" ID="ID_785014533" MODIFIED="1378747010075" TEXT="implicitly allowing the this reference to escape">
+<icon BUILTIN="help"/>
 <node CREATED="1378746230264" ID="ID_1544098160" MODIFIED="1378746349445" TEXT="Returning this from a non-private, overridable method  that is invoked from &#xa;the constructor of a class whose object is being constructed."/>
 <node CREATED="1378746374503" ID="ID_1895369267" MODIFIED="1378746435604" TEXT="Returning this from a nonprivate method of a mutable class, which allows the &#xa;caller to manipulate the object&apos;s state indirectly. This commonly occurs in&#xa; method-chaining implementations"/>
 <node CREATED="1378746452000" ID="ID_340156149" MODIFIED="1378746462155" TEXT="Passing this as an argument to an alien method invoked from the &#xa;constructor of a class whose object is being constructed."/>
@@ -36,6 +37,14 @@
 <node CREATED="1378746518600" ID="ID_315581479" MODIFIED="1378746526913" TEXT="Throwing an exception from a constructor. Doing so may cause code to be &#xa;vulnerable to a finalizer attack"/>
 <node CREATED="1378746553912" ID="ID_504941885" MODIFIED="1378746572263" TEXT="Passing internal object state to an alien method. &#xa;This enables the method to retrieve the this reference&#xa; of the internal member object."/>
 </node>
+<node CREATED="1378746962704" ID="ID_303572969" MODIFIED="1378747010076" TEXT="using factory method to prevent the this ref from&#xa; escaping during construction">
+<icon BUILTIN="help"/>
+</node>
+<node CREATED="1378747180152" FOLDED="true" ID="ID_1055322036" MODIFIED="1378747260169" TEXT="lack of thread confinement">
+<node CREATED="1378747234795" ID="ID_1627443550" MODIFIED="1378747239819" TEXT="for instance variables"/>
+<node CREATED="1378747240121" ID="ID_1726465054" MODIFIED="1378747258988" TEXT="for local variables let to escape &#xa;via return value"/>
+</node>
+<node CREATED="1378747294993" ID="ID_1783064899" MODIFIED="1378747304011" TEXT="using ThreadLocal for thread confinement"/>
 </node>
 <node CREATED="1378745205185" FOLDED="true" ID="ID_395641659" MODIFIED="1378745235171" POSITION="right" TEXT="thread safety">
 <node CREATED="1378743296928" FOLDED="true" ID="ID_465356666" MODIFIED="1378743641524" TEXT="avoiding instance variables (stateless) for thread safety">
