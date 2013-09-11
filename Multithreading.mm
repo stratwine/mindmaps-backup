@@ -43,8 +43,7 @@
       unsafe publishing has the same effect as&#160;<br />unsynchronized code
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1378796119989" FOLDED="true" ID="ID_882954407" MODIFIED="1378804388480" TEXT="safe publishing">
@@ -154,8 +153,7 @@
       use primitive variables for state<br />and provide only constructors
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1378795974353" FOLDED="true" ID="ID_678398564" MODIFIED="1378796736486" TEXT="volatile immutable object as cache ?">
@@ -181,14 +179,30 @@
 <node CREATED="1378812736265" ID="ID_854490407" MODIFIED="1378812742234" TEXT="consumer notifies after consuming"/>
 </node>
 </node>
-<node CREATED="1378803188514" FOLDED="true" ID="ID_1600944630" MODIFIED="1378806734069" POSITION="right" TEXT="delegating thread-safety">
-<node CREATED="1378803194577" FOLDED="true" ID="ID_1357197094" MODIFIED="1378806541603" TEXT="delegate thread-safety to concurrent hash map">
+<node CREATED="1378803188514" FOLDED="true" ID="ID_1600944630" MODIFIED="1378884958997" POSITION="right" TEXT="delegating thread-safety">
+<node CREATED="1378803194577" FOLDED="true" ID="ID_1357197094" MODIFIED="1378884955950" TEXT="delegate thread-safety to concurrent hash map">
 <node CREATED="1378803266685" FOLDED="true" ID="ID_394977624" MODIFIED="1378806540869" TEXT="for any modifications use concurrent hash map">
 <node CREATED="1378806525431" ID="ID_1011194601" MODIFIED="1378806529728" TEXT="putIfAbsent"/>
 <node CREATED="1378806530384" ID="ID_1534058023" MODIFIED="1378806535494" TEXT="remove ( if present)"/>
 <node CREATED="1378806535869" ID="ID_421330948" MODIFIED="1378806539916" TEXT="replace (if present)"/>
 </node>
 <node CREATED="1378803276529" ID="ID_1153651851" MODIFIED="1378803287794" TEXT="for sharing it outside, use a unmodifiable map view"/>
+<node CREATED="1378884824941" FOLDED="true" ID="ID_1760556060" MODIFIED="1378884954919" TEXT="eg: maintain a cache (after an expensive operation)">
+<node CREATED="1378884839878" ID="ID_161386922" MODIFIED="1378884844237" TEXT="without concurrent hashmap"/>
+<node CREATED="1378884844596" ID="ID_1905869326" MODIFIED="1378884875188">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      the block that updates the cache<br />should be synchronized
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 <node CREATED="1378803362858" FOLDED="true" ID="ID_435980843" MODIFIED="1378803673304" TEXT="delegating thread-safety to multiple underlying states">
 <node CREATED="1378803380016" ID="ID_1177032992" MODIFIED="1378803387564" TEXT="use CopyOnWriteArrayList"/>
@@ -241,8 +255,7 @@
       return a deepCopy or an&#160;unmodifiable view<br />from the getters
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -328,8 +341,7 @@
       compound operations on vector may<br />lead to confusing results
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1378806177216" ID="ID_799370701" MODIFIED="1378806191826" TEXT="you have a class with a vector"/>
 <node CREATED="1378806192185" ID="ID_1025573252" MODIFIED="1378806202326" TEXT="you have implemented deleteLast"/>
 <node CREATED="1378806203513" ID="ID_1603339817" MODIFIED="1378806211169" TEXT="for which you retrieve the last element"/>
@@ -350,6 +362,16 @@
 <node CREATED="1378812843951" ID="ID_1725270567" MODIFIED="1378812848639" TEXT="set back the interrupt"/>
 <node CREATED="1378812848920" ID="ID_1328023366" MODIFIED="1378812855998" TEXT="Thread.currentThread().interrupt()"/>
 </node>
+</node>
+<node CREATED="1378890416061" FOLDED="true" ID="ID_9391263" MODIFIED="1378894447542" POSITION="right" TEXT="wait and notify">
+<node CREATED="1378890420451" ID="ID_1836890523" MODIFIED="1378890427513" TEXT="seldom an need for it"/>
+<node CREATED="1378890427763" ID="ID_707895096" MODIFIED="1378890448153" TEXT="JB says to use higher (concurrency) api"/>
+<node CREATED="1378890450215" ID="ID_1311352562" MODIFIED="1378890457246" TEXT="like assembly programming"/>
+<node CREATED="1378890589224" FOLDED="true" ID="ID_1498416113" MODIFIED="1378890800744" TEXT="suggestion: always call wait in a loop">
+<node CREATED="1378890776121" ID="ID_455886418" MODIFIED="1378890789089" TEXT="if thread is awoken without a notification"/>
+<node CREATED="1378890789370" ID="ID_744393976" MODIFIED="1378890795541" TEXT="it now goes back to wait"/>
+</node>
+<node CREATED="1378890599317" ID="ID_1877789286" MODIFIED="1378890626378" TEXT="beware of : never being notified"/>
 </node>
 </node>
 </map>
